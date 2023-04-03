@@ -60,10 +60,14 @@ function App() {
     });
     return e;
   };
-  const handleAddTask = () =>
+  const handleAddTask = () => {
     setTasks((tasks) => {
       return [...tasks, newTask];
     });
+    setNewTask((newTask) => {
+      return { ...newTask, kod: "", metru: "0", maxhod: "1" };
+    });
+  };
 
   const [newDigger, setNewDigger] = useState({
     id: diggers.length + 1,
@@ -84,7 +88,9 @@ function App() {
   };
   const handleAddDigger = () => {
     setDiggers([...diggers, newDigger]);
-    setNewDigger({ id: newDigger.id + 1 });
+    setNewDigger((newDigger) => {
+      return { id: newDigger.id + 1, name: "", male: true };
+    });
   };
 
   return (
