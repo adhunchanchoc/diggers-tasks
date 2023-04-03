@@ -38,3 +38,22 @@ export const DeleteButton = styled.span`
     font-weight: bolder;
   }
 `;
+export const InputRow = styled(Item)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+`;
+export const InputField = styled.input`
+  background-color: white;
+  max-width: 9rem;
+  font-size: 1.2rem;
+  padding: 2px;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  ${(props) => {
+    if (props.type == "number") {
+      return "max-width:3rem";
+    }
+  }}
+`;
