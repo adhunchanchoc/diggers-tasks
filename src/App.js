@@ -133,7 +133,7 @@ function App() {
               <InputField
                 type="radio"
                 onChange={handleNewDigger}
-                value="true"
+                value={newDigger.male}
                 name="male"
                 id="m"
               />
@@ -143,7 +143,7 @@ function App() {
               <InputField
                 type="radio"
                 onChange={handleNewDigger}
-                value="false"
+                value={!newDigger.male}
                 name="male"
                 id="f"
               />
