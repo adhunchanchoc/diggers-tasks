@@ -179,6 +179,7 @@ function App() {
               <InputField
                 onChange={handleChange}
                 type="number"
+                min="0"
                 step="0.5"
                 name="metru"
                 value={newTask.metru}
@@ -187,6 +188,7 @@ function App() {
               <InputField
                 onChange={handleChange}
                 type="number"
+                min="0"
                 name="maxhod"
                 value={newTask.maxhod}
               />
