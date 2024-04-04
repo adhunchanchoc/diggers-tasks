@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Workers (diggers) and tasks list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple exercise React application will allow the basic ADD / DELETE functionality for both employees and tasks. The tasks assignment is limited by internal logic, so that user can only add tasks that are feasible by the available workforce.
+If the task could not be finished in given time, the add button will be disabled and turns red.
+
+![Sample](diggers-tasks-screen.jpg)
+
+## Online sample
+
+The sample of the application is available online at https://adhunchanchoc.github.io/diggers-tasks/
+
+## Limitations
+
+As this was a simple school project, only the Czech language version is available.
+
+# Instructions
+
+Following the standard documentation for testing and building React projects will work:
 
 ## Available Scripts
 
